@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Behind the scenes, a Sinatra Application "
-date:       2017-12-20 22:11:39 +0000
+date:       2017-12-20 17:11:39 -0500
 permalink:  behind_the_scenes_a_sinatra_application
 ---
 
@@ -14,15 +14,15 @@ A **M**odel **V**iew **C**ontroller pattern, is used to separate the application
 
 * Model: Responsible for the logic of the application. Models interact directly with the database. They store and manipulate data.
 * View: This is the only part that the user interacts with directly. Views represent the visualization of the data that the models contain.
-* Controller: The go-between for models and views. The controller relays data from the browser to the application, and from the application to the browser.
-
+* Controller: The go-between for models and views. The controller relays data from the browser to the application, and from the application to the browser.  
+ 
 #### REST
 In Sinatra, a route is an HTTP method (get, post, put, delete, patch) paired with a URL-matching pattern. A RESTful route is a route that provides mapping between these methods to controller CRUD actions. 
 
 #### CRUD
 **C**reate **R**ead **U**pdate **D**elete. These are the four basic functions of persistent storage.
 
-#### A Sinatra Request 
+#### A Sinatra Request  
 1. The client (in this case the browser) makes a HTTP request. Sinatra routes it to the correct **Controller** Action.
 2. A **Controller** Action asks the models for objects.
 3. **Model** asks for the data to the database.
